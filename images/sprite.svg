@@ -1,0 +1,33 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 2" id="line">
+    <path fill="#63c3ef" d="M0 0h50v2H0z"></path>
+  </symbol>
+  <symbol id="menu" enable-background="new 0 0 24 24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g>
+      <path d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"></path>
+    </g>
+    <g>
+      <path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"></path>
+    </g>
+    <g>
+      <path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"></path>
+    </g>
+    <g>
+      <path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"></path>
+    </g>
+  </symbol>
+  <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.8 23.8">
+    <defs></defs>
+    <path d="M11,17.9a8.7,8.7,0,0,0,.8,4.8,1,1,0,0,0,1.2.4.8.8,0,0,0,.4-1.2,8.3,8.3,0,0,1-.7-3.8,7.6,7.6,0,0,1,15.2,1.1A7.7,7.7,0,0,1,16.1,25a.8.8,0,0,0-1.2.2.9.9,0,0,0,.2,1.3A10,10,0,0,0,19.6,28a9.3,9.3,0,0,0,6.1-1.7l5.5,6.4a.9.9,0,0,0,.6.3.7.7,0,0,0,.7-.2.9.9,0,0,0,.1-1.2L27,25.2a8.9,8.9,0,0,0,2.6-5.8A9.3,9.3,0,1,0,11,17.9Z" transform="translate(-10.9 -9.3)"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11" id="tick">
+    <defs></defs>
+    <path id="Shape_10_copy_5" d="M2,4L6,8l8-8"></path>
+  </symbol>
+  <symbol id="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51">
+    <defs></defs>
+    <circle cx="25.5" cy="25.5" r="25.5"></circle>
+    <rect x="24.4" y="27.9" width="1.6" height="15.24" rx="0.8" transform="matrix(0.78, -0.63, 0.63, 0.78, -21.26, 15.39)"></rect>
+    <rect x="33.3" y="27.9" width="1.6" height="15.24" rx="0.8" transform="translate(24 -21.9) rotate(37.3)"></rect>
+  </symbol>
+</svg>
