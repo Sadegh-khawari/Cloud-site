@@ -1,6 +1,7 @@
 :root {
   --color-accent: #ff3400;
   --color-body: #918ca4;
+  --color-body-darker: #5c5577;
   --color-border: #ccc;
   --color-headings: #1b0760;
   --color-primary: #2584ff;
@@ -328,7 +329,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan--popular .card__header{
+.plan--popular .card__header {
   position: relative;
 }
 
@@ -359,21 +360,68 @@ a {
   }
 }
 
+/* Media */
 
-/* media */
-
-.media{
+.media {
   display: flex;
 }
 
-.media__title{
+.media__title {
   margin-top: 0;
 }
 
-.media__body{
+.media__body {
   margin: 0 2rem;
 }
 
-.media__image{
+.media__image {
   margin-top: 1rem;
+}
+
+/* quotes */
+
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-body-darker);
+  line-height: 1.3;
+}
+
+.quote__text::before{
+  content: open-quote;
+}
+
+.quote__text::after{
+  content: close-quote;
+}
+
+.quote__author{
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.quote__organization{
+  font-size: 2rem;
+  color: var(--color-headings);
+  opacity: .4;
+  font-style: normal;
+}
+
+.quote__line{
+  position: relative;
+  bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote{
+    font-size: 2rem;
+  }
+  .quote__author{
+    font-size: 2.4rem;
+  }
+  .quote__organization{
+    font-size: 1.6rem;
+  }
 }
