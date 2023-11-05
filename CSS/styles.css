@@ -163,11 +163,11 @@ a {
   fill: var(--color-primary);
 }
 
-.icon--white{
+.icon--white {
   fill: #fff;
 }
 
-.icon--small{
+.icon--small {
   width: 30px;
   height: 30px;
 }
@@ -184,7 +184,7 @@ a {
   white-space: nowrap;
 }
 
-.icon-container--accent{
+.icon-container--accent {
   background-color: var(--color-accent);
 }
 
@@ -244,7 +244,7 @@ a {
   color: #fff;
 }
 
-.btn--stretched{
+.btn--stretched {
   padding-right: 6rem;
   padding-left: 6rem;
 }
@@ -405,161 +405,193 @@ a {
   line-height: 1.3;
 }
 
-.quote__text::before{
+.quote__text::before {
   content: open-quote;
 }
 
-.quote__text::after{
+.quote__text::after {
   content: close-quote;
 }
 
-.quote__author{
+.quote__author {
   font-size: 3rem;
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
 }
 
-.quote__organization{
+.quote__organization {
   font-size: 2rem;
   color: var(--color-headings);
-  opacity: .4;
+  opacity: 0.4;
   font-style: normal;
 }
 
-.quote__line{
+.quote__line {
   position: relative;
   bottom: 10px;
 }
 
 @media screen and (min-width: 1024px) {
-  .quote{
+  .quote {
     font-size: 2rem;
   }
-  .quote__author{
+  .quote__author {
     font-size: 2.4rem;
   }
-  .quote__organization{
+  .quote__organization {
     font-size: 1.6rem;
   }
 }
 
-
 /* Grids */
 
-.grid{
+.grid {
   display: grid;
 }
 
 @media screen and (min-width: 768px) {
-  .grid--1x2{
-    grid-template-columns: repeat(2,1fr);
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-
 /* Testimonials */
 
-.testimonial{
+.testimonial {
   padding: 3rem;
 }
 
-.testimonial__image > img{
+.testimonial__image > img {
   width: 100%;
 }
 
-.testimonial__image{
+.testimonial__image {
   position: relative;
 }
 
-.testimonial__image > .icon-container{
+.testimonial__image > .icon-container {
   position: absolute;
   top: 3rem;
   right: -32px;
 }
 
-
 @media screen and (min-width: 768px) {
   .testimonial .quote,
-  .testimonial .quote__author
-  {
+  .testimonial .quote__author {
     font-size: 2.4rem;
   }
-
 }
-
 
 /* Callouts */
 
-.callout{
+.callout {
   padding: 4rem;
   border-radius: 5px;
 }
 
-.callout--primary{
+.callout--primary {
   background: var(--color-primary);
   color: #fff;
 }
 
-.callout__heading{
+.callout__heading {
   color: #fff;
   font-size: 3rem;
   margin-top: 0;
 }
 
-.callout .btn{
+.callout .btn {
   display: grid;
   justify-self: center;
   align-self: center;
 }
 
-.callout__content{
+.callout__content {
   text-align: center;
 }
 
-@media screen and (min-width:768px) {
-  .callout .grid--1x2{
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
-  .callout__content{
+  .callout__content {
     text-align: left;
   }
-  .callout .btn{
+  .callout .btn {
     justify-self: start;
     margin: 0 2rem;
   }
 }
 
-
 /* Collapsibles */
 
-.collapsible__header{
+.collapsible__header {
   display: flex;
   justify-content: space-between;
 }
 
-.collapsible__heading{
+.collapsible__heading {
   margin-top: 0;
   font-size: 3rem;
 }
 
-.collapsible__chevron{
+.collapsible__chevron {
   transform: rotate(-90deg);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
-.collapsible__content{
+.collapsible__content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.collapsible--expanded .collapsible__chevron{
+.collapsible--expanded .collapsible__chevron {
   transform: rotate(0);
 }
 
-.collapsible--expanded .collapsible__content{
+.collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
+}
+
+/* Blocks */
+
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block--dark {
+  background-color: #000;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block__header{
+  text-align: center;
+}
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
 }
