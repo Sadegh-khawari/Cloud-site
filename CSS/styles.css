@@ -202,6 +202,13 @@ a {
   text-align: center;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 .btn--primary {
   background-color: var(--color-primary);
   color: #fff;
@@ -276,10 +283,10 @@ a {
   display: flex;
 }
 
-.input-group #input {
+.input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -638,7 +645,7 @@ a {
   box-shadow: 0 0 0 3px #666;
 }
 
-.nav__brand{
+.nav__brand {
   transform: translateY(5px);
 }
 
@@ -653,34 +660,60 @@ a {
     max-height: 100%;
     opacity: 1;
   }
-  .nav__item{
+  .nav__item {
     border: 0;
   }
 }
 
 /* Hero */
-.hero{
+.hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
-.hero__tagline{
+.hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
   margin: 2rem 0 5rem;
 }
 
-.hero__image{
+.hero__image {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .hero{
+  .hero {
     padding-top: 0;
   }
 
-  .hero__content{
+  .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain Block */
+
+.block-domain .input-group {
+  box-shadow: 0px 0px 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:768px){
+  .block-domain__prices{
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
   }
 }
