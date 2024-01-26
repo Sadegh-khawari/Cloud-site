@@ -814,12 +814,12 @@ a {
   background: #232323;
 }
 
-.footer a{
+.footer a {
   color: #777;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: #fff;
 }
 
@@ -828,7 +828,7 @@ a {
   border-bottom: 1px solid #393939;
 }
 
-.footer__section .list{
+.footer__section .list {
   margin: 0;
 }
 
@@ -842,7 +842,7 @@ a {
   text-align: center;
 }
 
-.footer__brand img{
+.footer__brand img {
   /* TODO: Consider refactoring this and applying it to all images */
   width: 100%;
   max-width: 230px;
@@ -854,30 +854,29 @@ a {
   opacity: 0.3;
 }
 
-
 @media screen and (min-width: 768px) {
-  .footer__sections{
-    grid-template-columns:repeat(auto-fit,minmax(10rem,1fr)) ;
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
-  .footer__section{
+  .footer__section {
     border: 0;
   }
-  .footer .collapsible__chevron{
+  .footer .collapsible__chevron {
     display: none;
   }
-  .footer .collapsible__content{
+  .footer .collapsible__content {
     opacity: 1;
     max-height: 100%;
   }
 
-  .footer__brand{
+  .footer__brand {
     order: -1;
     margin-top: 1rem;
   }
-  .footer__copyright{
+  .footer__copyright {
     font-size: 1.5rem;
   }
-  .footer__heading{
+  .footer__heading {
     font-size: 1.6rem;
   }
 }
