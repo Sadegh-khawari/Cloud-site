@@ -349,7 +349,7 @@ a {
   font-size: 6rem;
 }
 
-.plan__billing-cicle {
+.plan__billing-cycle {
   font-size: 2.4rem;
   font-weight: 300;
   opacity: 0.8;
@@ -520,6 +520,10 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+}
+
+.callout-signup{
+  transform: translateY(5rem);
 }
 
 .callout--primary {
