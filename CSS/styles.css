@@ -295,6 +295,7 @@ a {
   flex-grow: 1;
   padding: 1.5rem 2rem;
   width: 0;
+  outline: none;
 }
 
 .input-group .btn {
